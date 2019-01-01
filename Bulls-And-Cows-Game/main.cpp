@@ -3,15 +3,32 @@
 //  Bulls-And-Cows-Game
 //
 //  Created by Casey O'Neill on 12/31/18.
-//  Copyright © 2018 Context + Form Digital. All rights reserved.
+//  Copyright © The Curious Corporation All rights reserved.
 //
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
+int add(int a, int b) {
+    return a + b;
+}
+
 int main() {
     
-    cout << "Hello World!" << endl;
+    int a, b, answer;
+    string name;
+    cout << "What is you name? ";
+    cin >> name;
+    cout << "Hello " << name << endl;
+    cout << "Please enter two numbers" << endl;
+    cout << "First: ";
+    cin >> a;
+    cout << "Second: ";
+    cin >> b;
+    answer = add(a, b);
+    cout << "The answer to " << a << " + " << b << " is " << answer << endl;
+    cout << "Come back again soon." << endl;
     return 0;
 }
